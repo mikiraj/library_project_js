@@ -10,13 +10,46 @@
 </head>
 
 <body>
+    <div id="create-page">
+        <form action="" id="form" class="hide">
+            <div>
+                <label for="book-title">Name:</label>
+                <input type="text" id="book-title" placeholder="Alice in Wonderland" required>
+            </div>
+            <div>
+                <label for="book-author">Author:</label>
+                <input type="text" id="book-author">
+            </div>
+            <div>
+                <label for="book-page-number">Page:</label>
+                <input type="number" id="book-page-number">
+            </div>
+            <div>
+                <input type="radio" id="is-read-yes" value="is-read" name="is-read">
+                <label for="is-read-yes">It is already read</label>
+            </div>
+            <div>
+                <input type="radio" id="is-read-no" value="not-read" name="is-read" checked>
+                <label for="is-read-no">It is not read</label>
+            </div>
+
+
+
+            <div>
+                <button type="submit" id="add">Submit</button>
+                <button type="button" id="hide-form">Nevermind</button>
+            </div>
+
+
+        </form>
+    </div>
     <h1>Project: Library </h1>
     <h4>The Odin Project </h4>
 
     <div id="bookcase">
 
     </div>
-
+    <button id="new-books">+New Book</button>
 </body>
 
 </html>
